@@ -3,6 +3,7 @@
 /*******************************/
 :root {
   --clr-primary-400: hsl(158, 36%, 37%);
+  --clr-hover-600: hsl(159, 75%, 11%);
   --clr-primary-200: hsl(30, 38%, 92%);
   --clr-neutral-200: hsl(0, 0%, 100%);
   --clr-neutral-400: hsl(228, 12%, 48%);
@@ -40,6 +41,7 @@ body {
   display: grid;
   align-items: center;
   justify-content: center;
+
   min-height: 100vh;
 }
 h1,
@@ -107,6 +109,10 @@ button {
   background-color: var(--clr-primary-400);
   color: var(--clr-neutral-200);
   font-weight: 700;
+}
+button:hover,
+button:focus {
+  background-color: var(--clr-hover-600);
 }
 /* .attribution {
   font-size: 11px;
